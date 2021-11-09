@@ -7,7 +7,6 @@ function renderBox(){
   body {
     font-family: "Roboto";
     box-sizing: border-box;
-    background-color: gray;
   }
   
   @font-face {
