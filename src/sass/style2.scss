@@ -1,0 +1,96 @@
+@import "./reset.scss";
+
+.ecomMB {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 320px;
+    height: 500px;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    .adx-logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+.ecomMB-product {
+    margin-top: 5px;
+    overflow: hidden;
+    margin-top: 11px;
+    margin-left: 15px;
+    .product-item{
+        width: 180px;
+        height: 280px;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.06);
+        
+    }
+    .product-img{
+        position: relative;
+        img{
+            width: 180px;
+            height: 179.25px;
+        }
+        .content-svg{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .tem-right {
+        margin-top: 4px;
+        margin-left: 12px;
+        .item-detail {
+            h5{
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                color: #373737;
+                font-weight: 400;
+            }
+        }
+        .item-price{
+            margin-top: 6px;
+            display: flex;
+            h5 {
+                margin-right: 2px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: center;
+                color: #777777;
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+                text-align: center;
+                color: #e00000;
+            }
+        }
+    }
+    
+   
+}
+.content-brand{
+    display: flex;
+    margin: 2px 12px;
+    position: relative;
+    .brand-left{
+      position: absolute;
+      left: 0;
+    }
+    .brand-center{
+        position: absolute;
+        left: 50%;
+        
+    }
+    .brand-right{
+        position: absolute;
+        right: 0;
+    }
+}
+

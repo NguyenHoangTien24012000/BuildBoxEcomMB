@@ -8,9 +8,24 @@ body {
 }
 @font-face {
     font-family: "Roboto";
-    src: url("../src/fonts/Roboto-Medium.ttf");
-    font-weight: normal;
+    src: url("../src/fonts/Roboto-Thin.ttf");
     font-style: normal;
+    font-weight: 300; 
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../src/fonts/Roboto-Medium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../src/fonts/Roboto-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
 }
 
 

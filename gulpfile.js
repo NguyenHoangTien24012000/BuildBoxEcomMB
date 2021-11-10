@@ -13,8 +13,21 @@ gulp.task('sassTask', function () {
 });
 
 
+gulp.task('sassTask1', function () {
+    return src('src/sass/style1.scss', { sourcemaps: true })
+        .pipe(sass())
+        .pipe(dest('dist', { sourcemaps: '.' }));
+});
+
+gulp.task('sassTask2', function () {
+    return src('src/sass/style2.scss', { sourcemaps: true })
+        .pipe(sass())
+        .pipe(dest('dist', { sourcemaps: '.' }));
+});
+
+
 gulp.task('fileinclude', function () {
-    gulp.src(['src/layouts/test.html'])
+    gulp.src(['src/layouts/layoutEcomMB1/test.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -24,8 +37,8 @@ gulp.task('fileinclude', function () {
 
 
 
-const cssContent = fs.readFileSync("src/layouts/style.css", "utf8");
-const htmlContent = fs.readFileSync("src/layouts/content.html", "utf8");
+const cssContent = fs.readFileSync("src/layouts/layoutEcomMB1/style.css", "utf8");
+const htmlContent = fs.readFileSync("src/layouts/layoutEcomMB1/content.html", "utf8");
 
 
 gulp.task('taskJS',function(){
