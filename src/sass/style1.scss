@@ -14,16 +14,27 @@
         right: 0;
         cursor: pointer;
     }
+    .ecomMB-bg {
+        width: 320px;
+        height: 180px;
+        img {
+            width: 320px;
+            height: 180px;
+        }
+    }
+}
+.slider-down {
+    overflow: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 .ecomMB-product {
     margin-top: 5px;
-    overflow: hidden;
     height: 290px;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    &::-webkit-scrollbar { 
-        display: none; 
-    }
+    transition: all 1s;
     .product-item {
         margin: 7px 10px 0px 12px;
         display: flex;
@@ -59,7 +70,7 @@
         margin-top: 4px;
         margin-left: 12px;
         .item-detail {
-            h5{
+            h5 {
                 font-size: 14px;
                 line-height: 17px;
                 display: flex;
@@ -68,7 +79,7 @@
                 font-weight: 400;
             }
         }
-        .item-price{
+        .item-price {
             margin-top: 6px;
             display: flex;
             h5 {
@@ -88,25 +99,22 @@
             }
         }
     }
-    
-   
 }
-.content-brand{
+.content-brand {
     display: flex;
     margin: 2px 12px;
     position: relative;
-    .brand-left{
-      position: absolute;
-      left: 0;
+    .brand-left {
+        position: absolute;
+        left: 0;
     }
-    .brand-center{
+    .brand-center {
         position: absolute;
         left: 50%;
-        
+        cursor: pointer;
     }
-    .brand-right{
+    .brand-right {
         position: absolute;
         right: 0;
     }
 }
-

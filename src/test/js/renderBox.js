@@ -115,7 +115,7 @@ function renderBox(){
                         fill="#E00000" /></svg>
                 <p class="content-svg-text">-50%</p>
             </div>
-            <img src="./src/img/Rectangle 12 (1).png" alt="ecommb">
+            <img src="https://vn-live-05.slatic.net/p/37e33481b6edf190d75de9bfe0e0dfbd.png_200x200q80.jpg_.webp" alt="ecommb">
         </div>
     </div>
     <div class="content-right">

@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-batch-replace": "^0.0.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",

@@ -12,6 +12,12 @@
         .ecomMB-top-img {
             margin-top: 14px;
             margin-left: 23px;
+            width: 70px;
+            height: 35px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
         .ecomMB-top-text {
             margin-top: 18px;
@@ -58,13 +64,15 @@
         width: 190px;
         height: 278px;
         box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.06);
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     .product-img {
         position: relative;
-        img {
-            width: 190px;
-            height: 190px;
-        }
+        width: 190px;
+        height: 190px;
         .content-svg {
             position: absolute;
             top: 0;
