@@ -25,6 +25,11 @@ gulp.task('sassTask2', function () {
         .pipe(dest('dist', { sourcemaps: '.' }));
 });
 
+gulp.task('sassTask3', function () {
+    return src('src/sass/style3.scss', { sourcemaps: true })
+        .pipe(sass())
+        .pipe(dest('dist', { sourcemaps: '.' }));
+});
 
 gulp.task('fileinclude', function () {
     gulp.src(['src/layouts/layoutEcomMB1/test.html'])

@@ -4,40 +4,66 @@
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    width: 320px;
-    height: 500px;
-    background: #ffffff;
-    border: 1px solid #e7e7e7;
-    .adx-logo {
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
+    width: 375px;
+    height: 363px;
+    background-color: #f9f9f9;
+    .ecomMB-top {
+        display: flex;
+        .ecomMB-top-img {
+            margin-top: 14px;
+            margin-left: 23px;
+        }
+        .ecomMB-top-text {
+            margin-top: 18px;
+            margin-left: 10px;
+        }
+        h5 {
+            font-weight: 500;
+            font-size: 14px;
+            color: #222222;
+        }
+        p {
+            font-size: 9px;
+            color: #9b9b9b;
+        }
+        .ecomMB-top-button {
+            position: absolute;
+            button {
+                width: 85px;
+                height: 27px;
+                border: 1px solid #222222;
+                border-radius: 22px;
+                font-size: 12px;
+                color: #222222;
+            }
+            left: 279px;
+            top: 18px;
+        }
     }
 }
 .ecomMB-product {
-    margin-top: 5px;
+    margin-top: 14px;
     overflow: hidden;
-    margin-top: 11px;
-    margin-left: 15px;
+    margin-left: 20px;
     display: flex;
     height: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    background-color: #fff;
     &::-webkit-scrollbar { 
         display: none; 
     }
     .product-item {
-        margin-right: 15px;
-        width: 180px;
-        height: 280px;
+        margin-right: 20px;
+        width: 190px;
+        height: 278px;
         box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.06);
     }
     .product-img {
         position: relative;
         img {
-            width: 180px;
-            height: 179.25px;
+            width: 190px;
+            height: 190px;
         }
         .content-svg {
             position: absolute;
@@ -55,31 +81,29 @@
         }
     }
     .product-detail {
-        margin-top: 13px;
-        margin-left: 9px;
-        margin-right: 7px;
+        margin: 2px 10px 0 10px;
         position: relative;
     }
     .item-detail {
         h5 {
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 400;
-            line-height: 16px;
+            line-height: 18px;
             color: #464646;
         }
     }
     .item-price {
-        margin-top: 9px;
+        margin-top: 5px;
         h4 {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 13px;
             line-height: 18px;
             color: #e00000;
         }
         h5 {
             font-weight: 400;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 9px;
+        
             color: #777777;
         }
     }
