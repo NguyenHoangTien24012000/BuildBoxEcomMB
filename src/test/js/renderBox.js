@@ -1,110 +1,105 @@
 function renderBox(){
-	this.css=`* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Roboto";
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: "Roboto";
-    src: url("../src/fonts/Roboto-Medium.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  .ecomMB {
-    background-color: white;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    height: 100px;
-    width: 375px;
-    display: flex;
-  }
-  .ecomMB .content-left {
-    margin: 10px 12px;
-  }
-  .ecomMB .content-img {
-    position: relative;
-    height: 80px;
-    width: 80px;
-  }
-  .ecomMB .content-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .ecomMB .content-img .content-svg {
-    position: absolute;
-    bottom: 63px;
-    right: 0;
-  }
-  .ecomMB .content-img .content-svg-text {
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 18px;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    right: 2px;
-  }
-  .ecomMB .content-detail {
-    margin-top: 13px;
-    margin-right: 8px;
-  }
-  .ecomMB .content-detail h5 {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
-    color: #373737;
-  }
-  .ecomMB .content-price {
-    margin-top: 7px;
-    margin-bottom: 5px;
-    display: flex;
-  }
-  .ecomMB .content-price h5 {
-    margin-right: 2px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    color: #777777;
-  }
-  .ecomMB .content-price h4 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-    color: #e00000;
-  }
-  .ecomMB .content-brand {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-  }
-  .ecomMB .content-brand p {
-    font-size: 9px;
-    font-weight: bold;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #1c8ddc;
-    margin-right: 2px;
-  }
-  .ecomMB .content-brand span {
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 18px;
-    align-items: center;
-    color: #a5a5a5;
-  }
-  /*# sourceMappingURL=style.css.map */`;
+	this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.ecomMB {
+  background-color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100px;
+  width: 375px;
+  display: flex;
+}
+.ecomMB .content-left {
+  margin: 10px 12px;
+}
+.ecomMB .content-img {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+.ecomMB .content-img img {
+  width: 100%;
+  height: 100%;
+}
+.ecomMB .content-img .content-svg {
+  position: absolute;
+  bottom: 63px;
+  right: 0;
+}
+.ecomMB .content-img .content-svg-text {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+.ecomMB .content-detail {
+  margin-top: 13px;
+  margin-right: 8px;
+}
+.ecomMB .content-detail h5 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  color: #373737;
+}
+.ecomMB .content-price {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.ecomMB .content-price h5 {
+  margin-right: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #777777;
+}
+.ecomMB .content-price h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #e00000;
+}
+.ecomMB .content-brand {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.ecomMB .content-brand p {
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1c8ddc;
+  margin-right: 2px;
+}
+.ecomMB .content-brand span {
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 18px;
+  align-items: center;
+  color: #a5a5a5;
+}
+/*# sourceMappingURL=style.css.map */`;
 	this.html=`<div class="ecomMB">
     <div class="content-left">
         <div class="content-img">
@@ -115,7 +110,7 @@ function renderBox(){
                         fill="#E00000" /></svg>
                 <p class="content-svg-text">-50%</p>
             </div>
-            <img src="https://vn-live-05.slatic.net/p/37e33481b6edf190d75de9bfe0e0dfbd.png_200x200q80.jpg_.webp" alt="ecommb">
+            <img src="https://my-live-02.slatic.net/p/6300852960e74a5af9e65ac3e387d19b.jpg_200x200q80.jpg_.web" alt="ecommb">
         </div>
     </div>
     <div class="content-right">

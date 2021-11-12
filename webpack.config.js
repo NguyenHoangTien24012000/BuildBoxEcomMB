@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/test/js/renderBox.js',
+    entry: './src/test/jsRenderBoxData/renderBox3.js',
     output :{
         filename : 'index.js',
-        path : path.resolve(__dirname, 'build')
+        path : path.resolve(__dirname, 'build3')
     },
     mode : 'development',
     watch :true,
