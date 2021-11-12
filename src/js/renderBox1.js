@@ -1,8 +1,26 @@
 function renderBox(){
-	var imgContent = "%imgContent%", imgSp1 = "%imgSp1%", descriptionSp1 = "%descriptionSp1%", prevPrice1 = "%prevPrice1%", nextPrice1 = "%nextPrice1%", imgSp2 = "%imgSp2%", descriptionSp2 ="%descriptionSp2%", prevPrice2 = "%prevPrice2%", nextPrice2 = "%nextPrice2%", imgSp3 = "%imgSp3%", descriptionSp3 = "%descriptionSp3%" , prevPrice3 = "%prevPrice3%", nextPrice3 = "%nextPrice3%" , imgSp4= "%imgSp4%", descriptionSp4 = "%descriptionSp4%", prevPrice4 = "%prevPrice4", nextPrice4 = "%nextPrice4%", imgSp5 = "%imgSp5%", descriptionSp5 = "%descriptionSp5%", prevPrice5 = "%prevPrice5%", nextPrice5 = "%nextPrice5%";
 	this.css=`%%css%%`;
 	this.html=`%%html%%`;
 	document.getElementById('ecomMB').innerHTML = `<style>${this.css}</style>${this.html}`;
+	const $ = function(selector){
+		let slider = document.querySelector(`.${selector}`);
+		let itemHeight = slider.querySelector('.product-item').offsetHeight + 7;
+		let sliderProduct = slider.querySelector('.slider-down');
+		let sliderHeight = sliderProduct.offsetHeight;
+		let buttonDown = slider.querySelector('.brand-center');
+		let current = 0;
+	   
+		function down(){
+			buttonDown.addEventListener("click", function(){
+				current +=1;
+				sliderProduct.scrollTo({  top: sliderHeight,
+					behavior: 'smooth'})
+			})
+		}
+		return down();
+	}
+	
+	$('ecomMB');
 }
 
 renderBox();

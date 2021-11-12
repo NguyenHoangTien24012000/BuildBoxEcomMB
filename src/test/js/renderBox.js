@@ -1,5 +1,5 @@
 function renderBox(){
-	this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+	this.css=`@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 .ecomMB {
-  background-color: white;
+  background-color: #FBF9FC;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -66,7 +66,7 @@ body {
 .ecomMB .content-price h5 {
   margin-right: 2px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 18px;
   text-align: center;
   color: #777777;
@@ -85,7 +85,7 @@ body {
 }
 .ecomMB .content-brand p {
   font-size: 9px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
@@ -110,7 +110,7 @@ body {
                         fill="#E00000" /></svg>
                 <p class="content-svg-text">-50%</p>
             </div>
-            <img src="https://my-live-02.slatic.net/p/6300852960e74a5af9e65ac3e387d19b.jpg_200x200q80.jpg_.web" alt="ecommb">
+            <img src="./src/img/Rectangle 12 (1).png" alt="ecommb">
         </div>
     </div>
     <div class="content-right">

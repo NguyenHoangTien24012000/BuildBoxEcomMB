@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,17 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes stretch {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 .ecomMB {
   position: relative;
   left: 50%;
@@ -62,15 +73,13 @@ body {
 }
 .ecomMB-product .item-left .content-img .content-svg {
   position: absolute;
-  bottom: 73px;
+  bottom: 68px;
   right: 0;
 }
 .ecomMB-product .item-left .content-img .content-svg-text {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 18px;
-  align-items: center;
-  text-align: center;
   color: #ffffff;
   position: absolute;
   top: 0;
@@ -95,7 +104,7 @@ body {
 .ecomMB-product .item-right .item-price h5 {
   margin-right: 2px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18px;
   text-align: center;
   color: #777777;
@@ -121,6 +130,14 @@ body {
   position: absolute;
   left: 50%;
   cursor: pointer;
+  animation-name: stretch;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 .content-brand .brand-right {
   position: absolute;
