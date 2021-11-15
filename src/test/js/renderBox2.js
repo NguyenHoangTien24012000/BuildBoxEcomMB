@@ -39,9 +39,8 @@ body {
   margin-top: 5px;
   overflow: hidden;
   margin-top: 11px;
-  margin-left: 15px;
+  padding-left: 15px;
   display: flex;
-  height: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
@@ -107,11 +106,13 @@ body {
   right: 0;
   bottom: -5px;
 }
-
+.content-brand{
+    margin-top:10px;
+    margin-right:10px;
+}
 .content-brand .brand-right {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 /*# sourceMappingURL=style2.css.map */`;
 	this.html=`<div class="ecomMB">

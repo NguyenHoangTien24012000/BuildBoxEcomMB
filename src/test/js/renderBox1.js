@@ -74,7 +74,7 @@ body {
 }
 .ecomMB-product .item-left .content-img .content-svg {
   position: absolute;
-  bottom: 68px;
+  top: 0;
   right: 0;
 }
 .ecomMB-product .item-left .content-img .content-svg-text {
@@ -120,7 +120,7 @@ body {
 
 .content-brand {
   display: flex;
-  margin: 2px 12px;
+  margin: 7px 12px;
   position: relative;
 }
 .content-brand .brand-left {

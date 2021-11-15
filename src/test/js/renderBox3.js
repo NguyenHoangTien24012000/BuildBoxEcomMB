@@ -63,9 +63,8 @@ body {
 .ecomMB-product {
   margin-top: 14px;
   overflow: hidden;
-  margin-left: 20px;
+  padding-left: 20px;
   display: flex;
-  height: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   background-color: #fff;
@@ -132,10 +131,13 @@ body {
   bottom: -5px;
 }
 
+.content-brand{
+  margin-top:4px;
+  margin-right:10px;
+}
 .content-brand .brand-right {
-  position: absolute;
-  right: 5px;
-  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=style3.css.map */`;
 	this.html=`<div class="ecomMB">
